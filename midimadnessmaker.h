@@ -39,7 +39,7 @@ private:
 	uint32_t max_values[NUM_PINS] = {150000, 150000, 150000, 150000, 150000, 150000, 150000, 150000};
 	bool noteOnStates[NUM_PINS];
 	unsigned long debounceTimes[NUM_PINS + 1];
-	int touchPins[NUM_PINS];
+	int touchPins[NUM_PINS] = {T1, T2, T3, T4, T5, T6, T7, T8};
 	int midiNotes[NUM_PINS];
 	int DEBOUNCE_TIME = 50;
 	void pinChanged(int index, bool isPressed, int velocity);
